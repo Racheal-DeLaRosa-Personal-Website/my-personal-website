@@ -18,8 +18,13 @@ h1, h2 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: #e5e5e5;   
     letter-spacing: 2px;
+    padding-right: ;
     font-variant: small-caps;
     text-shadow: 2px 2px  5px black;
+}
+
+h1 {
+  padding: 10px 30px 0px 0px;
 }
 
 p {
@@ -34,11 +39,12 @@ header {
     /* border-radius: 20px 20px 0px 0px; */
     background-image: url(webdevorange.jpeg);
     background-size: 800px;
+    background-repeat: no-repeat;
     /* background-color: blueviolet; */
     width: 800px;
     height: 350px;
     text-align: right;
-    padding-right: 25px;
+    /* padding-right: 25px; */
     display: table-cell;
     
 
