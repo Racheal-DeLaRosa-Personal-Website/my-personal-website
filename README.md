@@ -14,3 +14,7 @@ Basic CSS styling, included via an external file
 3. A "Hello world" tier Javascript function, loaded via an external file
 e.g., a console.log of a given string
 4. HTML/CSS/JavaScript files submitted via a GitHub repository
+
+---
+
+04/09/2023 6:00PM - actived JS alert for homepage only, psuedocoded script source on other pages. this pop seems redundant on every page
