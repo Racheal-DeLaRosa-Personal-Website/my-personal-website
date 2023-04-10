@@ -1,25 +1,23 @@
 body {
-    background-color: rgb(0, 0, 0);
-    /* background-image: url(); */
-    background-size: contain;
-    text-align: center;
+  background-color: rgb(0, 0, 0);
+  background-size: contain;
+  text-align: center;
 }
 
 .page {
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25px;
-    background-color: #111; 
-  
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  background-color: #111;
 }
 
 h1, h2 {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: #e5e5e5;   
-    letter-spacing: 2px;
-    font-variant: small-caps;
-    text-shadow: 2px 2px  5px black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #e5e5e5;
+  letter-spacing: 2px;
+  font-variant: small-caps;
+  text-shadow: 2px 2px 5px black;
 }
 
 h1 {
@@ -27,117 +25,104 @@ h1 {
   float: right;
 }
 
-p {
+p, h3 {
   padding: 0px 40px 10px 40px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   letter-spacing: 1px;
   color: aliceblue;
-  /* font-variant: small-caps ; */
 }
 
 header {
+  display: block;
+  width: 100%;
+  position: fixed;
+}
 
-  }
-    
-    .name {
-      color: aliceblue;
-      padding-right: 2em;
-      float: right !important; 
-      padding-top: 8px;
-      font-size: larger;
-      }
-
-.nav {
-    display: block;
-    width: 100%;
-    position: fixed;
+.name {
+  color: aliceblue;
+  padding-right: 2em;
+  float: right !important;
+  padding-top: 8px;
+  font-size: larger;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 2px;
-  }
-
-  li{
-    display: inline;
-    float: left;
-  }
-
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 10px 16px;
-    text-decoration: none;
-    }
-
-
-  li a:hover {
-    background-color: #111;
-  }
-
-  .active {
-    background-color: #0f202c;
-  }
-
-  li img {
-    width: 20px;
-    text-decoration: none;
-  }
-
-  .wdimage {
-    background-image: url(webdevorange.jpeg);
-    background-size: 800px;
-    background-repeat: no-repeat;
-    width: 800px;
-    height: 350px;
-    
-  }
-
-.content {
-    width: 800px;
-    background-image: url(webdevorange.jpeg);
-    background-attachment: fixed;
-    background-position: right top;
-       
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
 }
 
-/* .left { */
-    /* width: 150PX; */
-    
-    /* background-image: url(fsnote.jpeg); */
-    /* background-color: aqua; */
-    /* display: inline-block; */
-    /* vertical-align:top; */
-    /* } */
+li {
+  display: inline;
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #0f202c;
+}
+
+li img {
+  width: 20px;
+  text-decoration: none;
+}
+
+.wdimage {
+  background-image: url(webdevorange.jpeg);
+  background-size: 800px;
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 350px;
+}
+
+.content {
+  width: 800px;
+  background-image: url(webdevorange.jpeg);
+  background-attachment: fixed;
+  background-position: right top;
+}
 
 .right {
-    width: 800px;
-    
-    /* background-color: rgb(119, 114, 137); */
-    display: inline-block;
-    vertical-align:top;
-        
+  width: 800px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.article {
+  display: grid;
+  border: solid 2px black;
+  border-radius: 25px;
+  background-color: #00000072;
+  margin: 5%;
+  padding: 5px;
 }
 
 footer {
-  /* background-color: aliceblue; */
-  padding: 15px; 
-  
+  padding: 15px;
 }
 
 .icons {
   display: inline-block;
   padding: 0px 5px;
-  
 }
 
 .icons:hover {
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   transform: scale(1.3);
 }
