@@ -17,4 +17,6 @@ e.g., a console.log of a given string
 
 ---
 
+04/09/2023 9:00pm - Updated portfolio page
+
 04/09/2023 6:00PM - actived JS alert for homepage only, psuedocoded script source on other pages. this pop seems redundant on every page
