@@ -18,13 +18,13 @@ h1, h2 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: #e5e5e5;   
     letter-spacing: 2px;
-    padding-right: ;
     font-variant: small-caps;
     text-shadow: 2px 2px  5px black;
 }
 
 h1 {
   padding: 10px 30px 0px 0px;
+  float: right;
 }
 
 p {
@@ -36,24 +36,21 @@ p {
 }
 
 header {
-    /* border-radius: 20px 20px 0px 0px; */
-    background-image: url(webdevorange.jpeg);
-    background-size: 800px;
-    background-repeat: no-repeat;
-    /* background-color: blueviolet; */
-    width: 800px;
-    height: 350px;
-    text-align: right;
-    /* padding-right: 25px; */
-    display: table-cell;
+
+  }
     
-
-    }
-
+    .name {
+      color: aliceblue;
+      padding-right: 2em;
+      float: right !important; 
+      padding-top: 8px;
+      font-size: larger;
+      }
 
 .nav {
     display: block;
-    width: 800px;
+    width: 100%;
+    position: fixed;
 }
 
 ul {
@@ -66,9 +63,9 @@ ul {
     letter-spacing: 2px;
   }
 
-  li {
+  li{
     display: inline;
-    float:left;
+    float: left;
   }
 
   li a {
@@ -77,8 +74,8 @@ ul {
     text-align: center;
     padding: 10px 16px;
     text-decoration: none;
-    
-  }
+    }
+
 
   li a:hover {
     background-color: #111;
@@ -91,6 +88,15 @@ ul {
   li img {
     width: 20px;
     text-decoration: none;
+  }
+
+  .wdimage {
+    background-image: url(webdevorange.jpeg);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 350px;
+    
   }
 
 .content {
@@ -122,6 +128,7 @@ ul {
 footer {
   /* background-color: aliceblue; */
   padding: 15px; 
+  
 }
 
 .icons {
@@ -133,10 +140,4 @@ footer {
 .icons:hover {
   transition: all .2s ease-in-out;
   transform: scale(1.3);
-}
-
-
-
-.header_title {
-  color: aliceblue;
 }
