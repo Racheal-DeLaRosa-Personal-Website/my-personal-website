@@ -1,2 +1,2 @@
-// alert("Welcome to My Personal Website");
+alert("Welcome to My Personal Website");
 
