@@ -16,6 +16,7 @@ e.g., a console.log of a given string
 4. HTML/CSS/JavaScript files submitted via a GitHub repository
 
 ---
+04/12/2023 3:00 pm - Added Flex grid to Portfolio page
 
 04/09/2023 9:00pm - Updated portfolio page
 
