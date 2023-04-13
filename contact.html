@@ -7,30 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Racheal De La Rosa - Contact</title>
     <link rel="stylesheet" href="style.css">
-    <script>
+    
 
-        const form = document.querySelector("#form")
-        const submitButton = document.querySelector("#submit")
-        const scriptURL = 'https://script.google.com/macros/s/1XTaVdkdAnzhAHoLOA-x0K4svtJOB9RUnp2OgudFCNoEE4Lo8muDKOgSO/exec'
-
-        form.addEventListener('submit', e => {
-            submitButton.disabled = true
-            e.preventDefault()
-            let requestBody = new FormData(form)
-            fetch(scriptURL, { method: 'POST', body: requestBody })
-                .then(response => {
-                    alert('Success!', response)
-                    submitButton.disabled = false
-                })
-                .catch(error => {
-                    alert('Error!', error.message)
-                    submitButton.disabled = false
-
-                }
-                )
-        })
-
-    </script>
 
 </head>
 
@@ -56,7 +34,7 @@
                 <!-- A form with the correct attributes is somewhere on the website.  -->
 
                 <div class="form">
-                    <form>
+                    <form id="form">
                         <h2>Contact Me Form</h2>
                         <label for="fname">First Name</label>
                         <input type="text" value="First Name"><br><br>
@@ -75,7 +53,8 @@
                         <textarea name="message" rows="10"
                             cols="30">Please describe the nature of your contact request. Thank You!</textarea><br>
                         <!-- Add a functioning "submit" button. -->
-                        <button type="button" onclick=location.href='formsubmitted.html'>Submit</button>
+                        <!-- <button type="button" onclick=location.href='formsubmitted.html'>Submit</button> -->
+                        <button type="submit" id="submit">Submit</button>
                     </form>
                     <br>
                 </div>
@@ -105,8 +84,7 @@
     </div>
 
 
-
-
+<script src="contact.js"></script>
 </body>
 
 </html>
