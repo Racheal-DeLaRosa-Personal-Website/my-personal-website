@@ -16,11 +16,8 @@ e.g., a console.log of a given string
 4. HTML/CSS/JavaScript files submitted via a GitHub repository
 
 ---
-
-04/13/2023 5:00 am - Add contact page and functioning form
-
 04/12/2023 3:00 pm - Added Flex grid to Portfolio page
 
-04/09/2023 9:00 pm - Updated portfolio page
+04/09/2023 9:00pm - Updated portfolio page
 
-04/09/2023 6:00 PM - actived JS alert for homepage only, psuedocoded script source on other pages. this pop seems redundant on every page
+04/09/2023 6:00PM - actived JS alert for homepage only, psuedocoded script source on other pages. this pop seems redundant on every page

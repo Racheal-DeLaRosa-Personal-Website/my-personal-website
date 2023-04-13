@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racheal De La Rosa - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+        const form = document.querySelector("#form")
+        const submitButton = document.querySelector("#submit")
+        const scriptURL = 'https://script.google.com/macros/s/1XTaVdkdAnzhAHoLOA-x0K4svtJOB9RUnp2OgudFCNoEE4Lo8muDKOgSO/exec'
+
+        form.addEventListener('submit', e => {
+            submitButton.disabled = true
+            e.preventDefault()
+            let requestBody = new FormData(form)
+            fetch(scriptURL, { method: 'POST', body: requestBody })
+                .then(response => {
+                    alert('Success!', response)
+                    submitButton.disabled = false
+                })
+                .catch(error => {
+                    alert('Error!', error.message)
+                    submitButton.disabled = false
+
+                }
+                )
+        })
+
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a class="active" href="contact.html">CONTACT</a></li>
+            <li class="name">RACHEAL DE LA ROSA</li>
+        </ul>
+    </header>
+
+    <div class="page">
+
+        <div class="content">
+            <div class="wdimage"></div>
+
+            <div class="right">
+
+                <!-- A form with the correct attributes is somewhere on the website.  -->
+
+                <div class="form">
+                    <form>
+                        <h2>Contact Me Form</h2>
+                        <label for="fname">First Name</label>
+                        <input type="text" value="First Name"><br><br>
+                        <label for="lname">Last Name</label>
+                        <input type="text" value="Last Name"><br><br>
+                        <label for="email">Email</label>
+                        <input id="email" type="email"><br><br>
+                        <label for="tel">Phone</label>
+                        <input id="tel" type="tel"><br><br>
+                        <label for="cars">Choose a Preferred Contact Method:</label>
+                        <select id="method" name="method">
+                            <option value="Phone">Phone</option>
+                            <option value="Email">Email</option>
+                        </select>
+                        <br><br>
+                        <textarea name="message" rows="10"
+                            cols="30">Please describe the nature of your contact request. Thank You!</textarea><br>
+                        <!-- Add a functioning "submit" button. -->
+                        <button type="button" onclick=location.href='formsubmitted.html'>Submit</button>
+                    </form>
+                    <br>
+                </div>
+            </div>
+            <footer>
+
+                <div class="icons"><a href="http://fullstack.instructure.com/"><img class="icons" src="fsa1.png"
+                            alt="Fullstack Academy" width="27px" /></a></div>
+                <div class="icons"><a href="http://WWW.linkedin.COM"><img src="LinkedIn.png" alt="LinkedIn"
+                            width="30px" /></a></div>
+                <div class="icons"><a href="http://WWW.GITHUB.COM"><img class="icons" src="GitHub.png" alt="GitHub"
+                            width="30px" /></a></div>
+
+            </footer>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
